@@ -1,0 +1,9 @@
+made report and report-list with report service so far
+-- very similiar to person, people-list and people service in class demo
+
+-Dec1
+-routing started, but need to add routing for view more component
+-- view more component needs to be created
+-delete button needs to be added
+
+if you want the map back in the add-form, go to map component and uncomment showmap

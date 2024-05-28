@@ -1,0 +1,17 @@
+<!-- no idea why this does not work -->
+
+<p>
+    Witness: {{ report.name }} <br>
+    Phone Number: {{ report.phoneNumber }} <br>
+    Added on: <span [textContent]="report.added_on | date "></span> <br>
+    Villain: {{ report.villain }} <br>
+    Location: {{ report.location }} <br>
+    Extra Information: {{ report.extraInfo }} <br>
+
+
+    <button 
+        class="btn btn-outline-danger"
+        (click)="onDelete($event,report.name)"
+    >DELETE</button> <br>
+</p>
+

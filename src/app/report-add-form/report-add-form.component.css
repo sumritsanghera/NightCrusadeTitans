@@ -1,0 +1,30 @@
+legend{
+    text-align: center;
+}
+/* 
+form{
+    width: 80vw;
+    padding: 1em;
+    margin: 1em;
+} */
+
+/* input{
+    width: 100%;
+    height: 2em;
+} */
+
+/* #lon{
+    float: left;
+} */
+
+.coordinates-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts the space between the two inputs */
+    width: 100%; /* Sets the width to 100% */
+    row-gap: 0.1em;
+}
+
+.coordinates-container input {
+    flex: 1; /* Allows each input to take equal space */
+    margin: 0 px; /* Adds a small margin between the inputs */
+}

@@ -1,0 +1,74 @@
+<form
+[formGroup]="form"
+(ngSubmit)="onSubmit(form.value)">
+
+        <app-map (mapReady)="onMapReady($event)" ></app-map>    
+        
+        <fieldset class="d-grid gap-2 col-12">
+
+        <legend>ADD REPORT</legend>
+       
+        <div class="coordinates-container">
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Witness Name*"
+                formControlName="name">
+            
+            <input 
+                type="number" 
+                name="phoneNumber" 
+                id="phoneNumber"
+                placeholder="Witness Phone Number*" 
+                formControlName="phoneNumber">
+        </div>
+
+        <input
+            type="text"
+            name="villainName"
+            id="villainName"
+            placeholder="Villains Name*"
+            formControlName="villain">
+        <input 
+            type="text" 
+            name="location"
+            id="location"
+            placeholder="Enter Location Name*" 
+            formControlName="location">
+
+        <div class="coordinates-container">
+            <input 
+                type="number" 
+                name="lat"
+                id="lat"
+                placeholder="Latitude Value* (Click on the Map)" 
+                formControlName="lat">
+        
+            <input 
+                type="number" 
+                name="lon"
+                id="lon"
+                placeholder="Longitude Value* (Click on the Map)" 
+                formControlName="lon">
+        </div>
+
+        <input 
+            type="text" 
+            name="image" 
+            id="image"
+            placeholder="image URL" 
+            formControlName="picture">
+
+        <input 
+            type="text" 
+            name="extraInfo" 
+            id="extraInfo"
+            placeholder="Extra Information" 
+            formControlName="extraInfo">
+
+        <button class="btn btn-primary" [disabled]="form.invalid" type="submit">Submit</button>
+
+    </fieldset>
+
+</form>
